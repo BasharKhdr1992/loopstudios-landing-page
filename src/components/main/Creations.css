@@ -1,0 +1,54 @@
+.creations {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.creations-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.creations-header-text {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 41%);
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+}
+
+.btn {
+  background-color: transparent;
+  letter-spacing: 0.5rem;
+  padding: 0.6rem 2.1rem;
+  text-transform: uppercase;
+  height: min-content;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  border: 1px solid black;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+
+.btn.btn-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .creations-header {
+    flex-direction: column;
+  }
+  .creations-header-text {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    width: 100%;
+  }
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 import './App.css';
+import DropDown from './components/header/DropDown';
 
-function App() {
+const App = () => {
+  const [dropDown, setDropDown] = useState(false);
+
+  const openDropdown = () => {
+    setDropDown(true);
+  };
+
+  const closeDropdown = () => setDropDown(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="wrapper">
+      {dropDown && <DropDown onDropdownClose={closeDropdown} />}
+      <Header onDropdownOpen={openDropdown} />
+      <Main />
+      <Footer />
+    </main>
   );
-}
+};
 
 export default App;

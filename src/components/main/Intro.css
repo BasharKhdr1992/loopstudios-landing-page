@@ -1,0 +1,65 @@
+.intro {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 35rem;
+}
+
+.intro-img-container {
+  width: 60%;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.intro-img {
+  width: 100%;
+  height: auto;
+}
+
+.intro-text {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 52%;
+  background-color: white;
+  padding: 4rem 0rem 0rem 4rem;
+}
+
+.intro-header {
+  color: hsl(0, 0%, 41%);
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.intro-para {
+  color: hsl(0, 0%, 55%);
+}
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    display: flex;
+    position: unset;
+    flex-direction: column;
+  }
+
+  .intro-img-container,
+  .intro-text {
+    width: 100%;
+    position: unset;
+  }
+  .intro-text {
+    padding: 0;
+  }
+  .intro-header {
+    font-size: 2.7rem;
+  }
+  .intro-para,
+  .intro-header {
+    text-align: center;
+  }
+}

@@ -1,0 +1,49 @@
+.creations-card {
+  width: 23%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.creations-card img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 98%, 0.7);
+  z-index: 0;
+  display: none;
+}
+
+.creations-card p {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 10%;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 98%);
+  font-size: 2rem;
+}
+
+.creations-card:hover .overlay {
+  display: block;
+}
+
+.creations-card:hover p {
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .creations-card {
+    width: 100%;
+  }
+}

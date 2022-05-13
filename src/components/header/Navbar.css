@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink {
+  background: transparent;
+  color: hsl(0, 0%, 100%);
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.underline {
+  height: 0.2rem;
+  width: 0;
+  background-color: white;
+  transition: all 0.3s ease-out;
+}
+
+.navlink:hover .underline {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .collapse {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .navlink-mobile {
+    padding-right: 0;
+  }
+}
