@@ -6,7 +6,7 @@ import hamburger from '../../images/icon-hamburger.svg';
 
 const Header = ({ onDropdownOpen }) => {
   return (
-    <div className="header">
+    <header className="header">
       <Navbar>
         <NavLink className={'collapse'}>About</NavLink>
         <NavLink className={'collapse'}>Careers</NavLink>
@@ -18,16 +18,16 @@ const Header = ({ onDropdownOpen }) => {
         </NavLink>
       </Navbar>
       <div className="header-text">
-        <p>
+        <h1>
           Immersive
           <br />
           experience
           <br />
           that delivers
           <br />
-        </p>
+        </h1>
       </div>
-    </div>
+    </header>
   );
 };
 

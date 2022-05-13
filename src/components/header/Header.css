@@ -1,6 +1,5 @@
 .header {
   background-image: url('../../images/desktop/image-hero.jpg');
-  background-color: hsla(0, 0%, 0%, 0.4);
   background-repeat: no-repeat;
   height: 80vh;
   display: flex;
