@@ -12,7 +12,7 @@
   padding: 1.5rem;
   margin-top: 4rem;
   letter-spacing: 0.5rem;
-  font-size: 4rem;
+  font-size: 2rem;
   text-transform: uppercase;
   border: 0.15rem solid hsl(0, 0%, 100%);
   width: 60%;
@@ -27,7 +27,7 @@
   }
   .header-text {
     width: 100%;
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     margin-top: 26rem;
   }
 }
