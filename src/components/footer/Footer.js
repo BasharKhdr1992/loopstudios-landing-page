@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <Navbar>
+        <Navbar id="footer-navbar">
           <NavLink>About</NavLink>
           <NavLink>Careers</NavLink>
           <NavLink>Events</NavLink>

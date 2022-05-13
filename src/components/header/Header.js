@@ -7,7 +7,7 @@ import hamburger from '../../images/icon-hamburger.svg';
 const Header = ({ onDropdownOpen }) => {
   return (
     <header className="header">
-      <Navbar>
+      <Navbar id="header-navbar">
         <NavLink className={'collapse'}>About</NavLink>
         <NavLink className={'collapse'}>Careers</NavLink>
         <NavLink className={'collapse'}>Events</NavLink>
