@@ -6,7 +6,7 @@ export const NavLink = ({ children, onClick, className }) => {
   return (
     <button onClick={onClick} className={`navlink ${className}`}>
       {children}
-      <div className={`underline ${width < 900 ? 'mobile' : undefined}`} />
+      <span className={`underline ${width < 900 ? 'mobile' : undefined}`} />
     </button>
   );
 };

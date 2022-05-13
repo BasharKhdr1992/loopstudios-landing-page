@@ -18,23 +18,23 @@ const DropDown = ({ onDropdownClose }) => {
       <div className="navbar-dropdown">
         <button className="dd-link">
           About
-          <div className="dd-link-underline" />
+          <span className="dd-link-underline" />
         </button>
         <button className="dd-link">
           Careers
-          <div className="dd-link-underline" />
+          <span className="dd-link-underline" />
         </button>
         <button className="dd-link">
           Events
-          <div className="dd-link-underline" />
+          <span className="dd-link-underline" />
         </button>
         <button className="dd-link">
           Products
-          <div className="dd-link-underline" />
+          <span className="dd-link-underline" />
         </button>
         <button className="dd-link">
           Support
-          <div className="dd-link-underline" />
+          <span className="dd-link-underline" />
         </button>
       </div>
     </div>

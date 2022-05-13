@@ -37,6 +37,7 @@
   font-size: 1.3rem;
   width: max-content;
   margin-top: 1rem;
+  display: block;
 }
 
 .dd-link-underline {

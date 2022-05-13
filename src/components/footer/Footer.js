@@ -9,7 +9,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <>
+    <footer>
       <div className="footer">
         <Navbar>
           <NavLink>About</NavLink>
@@ -39,7 +39,7 @@ const Footer = () => {
         </a>
         . Coded by <button>Bashar Khdr</button>.
       </div>
-    </>
+    </footer>
   );
 };
 

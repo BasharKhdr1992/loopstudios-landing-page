@@ -15,12 +15,12 @@ const App = () => {
   const closeDropdown = () => setDropDown(false);
 
   return (
-    <main className="wrapper">
+    <div className="wrapper">
       {dropDown && <DropDown onDropdownClose={closeDropdown} />}
       <Header onDropdownOpen={openDropdown} />
       <Main />
       <Footer />
-    </main>
+    </div>
   );
 };
 
